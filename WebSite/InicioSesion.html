@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio Sesion</title>
+    <!-- BOOTSTRAP-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    rel="stylesheet" >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
+
+<link rel="stylesheet" href="css/style.css">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    
+    <!--script del scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+        <!--NAVBAR-->
+        <nav class="fixed-top">
+            <div class="menu">
+                <ul>
+                    <li><a href="Inicio.html"><i class="fa fa-gamepad"></i></a></li>
+                    <li><a href="Inicio.html" class="menu-item">Inicio</a></li>                
+                    <li><a href="Registrarse.html" class="menu-item">Registrarse</a></li>
+                    <li><a href="InicioSesion.html" class="menu-item">Inicio Sesion</a></li>
+                    <li><a href="#" id="searcher"><i class="fa fa-search"></i></a></li>
+                </ul>
+                <div class="searcher-form">
+                    <form >
+                        <input type="text" name="" 
+                        placeholder="Buscar Juego">
+                    </form>
+                </div>
+                <a class="close"><i class="fa fa-times"></i></a>
+            </div>
+        </nav>
+        <hr>      
+
+        <!--BODY-->
+   <div class="login-box">
+        <h1>LOGIN</h1>
+        <div class="login-text-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Usuario" name="" value="">
+        </div>
+        <div class="login-text-box">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Contraseña" name="" value="">
+        </div>
+        <input class="login-btn" name="" value="Aceptar" type="button">
+    </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        
+        <!--SCRIPT-->
+        <script>
+            window.sr = ScrollReveal()
+            sr.reveal('.navbar', {
+                duration: 2000,
+                origin: 'bottom'
+            });
+        
+            //smoth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('#searcher').click(function(){
+          $('.menu-item').addClass('hide-item')
+          $('.searcher-form').addClass('active')
+          $('.close').addClass('active')
+          $('#searcher').hide()
+      })
+      $('.close').click(function(){
+          $('.menu-item').removeClass('hide-item')
+          $('.searcher-form').removeClass('active')
+          $('.close').removeClass('active')
+          $('#searcher').show()
+      })
+  })
+  window.addEventListener('scroll',function(){
+      var nav=document.querySelector("nav");
+      nav.classList.toggle("sticky",window.scrollY>0);
+  })
+</script>
+    </body>
+</html>

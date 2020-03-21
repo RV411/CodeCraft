@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+   
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Black+Ops+One|Orbitron|Roboto&display=swap" rel="stylesheet">     
+    
+    <!-- BOOTSTRAP-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    rel="stylesheet" >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
+
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!--NAVAR-->
+    <nav class="fixed-top">
+        <div class="menu">
+            <ul>
+                <li><a href="Inicio.html"><i class="fa fa-gamepad"></i></a></li>
+                <li><a href="Inicio.html" class="menu-item">Inicio</a></li>                
+                <li><a href="Registrarse.html" class="menu-item">Registrarse</a></li>
+                <li><a href="InicioSesion.html" class="menu-item">Inicio Sesion</a></li>
+                <li><a href="#" id="searcher"><i class="fa fa-search"></i></a></li>
+            </ul>
+            <div class="searcher-form">
+                <form >
+                    <input type="text" name="" 
+                    placeholder="Buscar Juego">
+                </form>
+            </div>
+            <a class="close"><i class="fa fa-times"></i></a>
+        </div>
+    </nav>
+    <hr>
+    <!--BODY-->
+   <div class="login-box">
+        <h1>LOGIN</h1>
+        <div class="login-text-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Usuario" name="" value="">
+        </div>
+        <div class="login-text-box">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Contraseña" name="" value="">
+        </div>
+        <input href="InicioSesion.html" class="login-btn" name="" value="Inicia Sesion" type="button">
+        <input href="Registrarse.html" class="login-btn" name="" value="Registrarse" type="button">
+   </div>
+
+    
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- JS Main -->
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+              crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#searcher').click(function(){
+                $('.menu-item').addClass('hide-item')
+                $('.searcher-form').addClass('active')
+                $('.close').addClass('active')
+                $('#searcher').hide()
+            })
+            $('.close').click(function(){
+                $('.menu-item').removeClass('hide-item')
+                $('.searcher-form').removeClass('active')
+                $('.close').removeClass('active')
+                $('#searcher').show()
+            })
+        })
+        window.addEventListener('scroll',function(){
+            var nav=document.querySelector("nav");
+            nav.classList.toggle("sticky",window.scrollY>0);
+        })
+    </script>
+</body>
+</html>

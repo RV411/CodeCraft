@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REGISTRO</title>
+    <!-- BOOTSTRAP-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    rel="stylesheet" >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
+
+<link rel="stylesheet" href="css/style.css">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    
+    <!--script del scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+        <!--NAVBAR-->
+        <nav class="fixed-top">
+            <div class="menu">
+                <ul>
+                    <li><a href="Inicio.html"><i class="fa fa-gamepad"></i></a></li>
+                    <li><a href="Inicio.html" class="menu-item">Inicio</a></li>                
+                    <li><a href="Registrarse.html" class="menu-item">Registrarse</a></li>
+                    <li><a href="InicioSesion.html" class="menu-item">Inicio Sesion</a></li>
+                    <li><a href="#" id="searcher"><i class="fa fa-search"></i></a></li>
+                </ul>
+                <div class="searcher-form">
+                    <form >
+                        <input type="text" name="" 
+                        placeholder="Buscar Juego">
+                    </form>
+                </div>
+                <a class="close"><i class="fa fa-times"></i></a>
+            </div>
+        </nav>
+        <hr>              
+        <!--BODY-->    
+        <div class="row register-box">
+            <h1>REGISTRO</h1>
+            <div class="col-md-4">
+                <div class="login-text-box">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="Nombre" name="" value="">
+                </div>
+                <div class="login-text-box">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="Apellido" name="" value="">
+                </div>
+                <div class="login-text-box">                    
+                    <input type="text" placeholder="Nick Name" name="" value="">
+                </div>
+                <div class="login-text-box">                    
+                    <input type="text" placeholder="Edad" name="" value="">
+                </div>
+                <div class="login-text-box">                    
+                    <input type="text" placeholder="Correo Electronico" name="" value="">
+                </div>                
+                <div class="login-text-box">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="Contraseña" name="" value="">
+                </div>
+                <input class="login-btn" name="" value="Aceptar" type="button">
+            </div>
+            
+            <div class="col-md-3">
+                <div class="radio-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="1">
+                        <label class="custom-control-label" for="1">Clásicos-Arcade</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego"  id="2">
+                        <label class="custom-control-label" for="2">Acción-Aventura</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="3">
+                        <label class="custom-control-label" for="3">Educativos</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="4">
+                        <label class="custom-control-label" for="4">Lucha</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="5">
+                        <label class="custom-control-label" for="5">Música</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="6">
+                        <label class="custom-control-label" for="6">Plataforma</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="7">
+                        <label class="custom-control-label" for="7">Carreras</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="8">
+                        <label class="custom-control-label" for="8">Juegos de Rol</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="9">
+                        <label class="custom-control-label" for="9">Simulación</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="10">
+                        <label class="custom-control-label" for="10">Disparos</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="11">
+                        <label class="custom-control-label" for="11">Deportes</label>
+                    </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="genero-juego" id="12">
+                        <label class="custom-control-label" for="12">Estrategia</label>
+                    </div>                                       
+                </div>            
+            </div>
+
+            <div class="col-md-3">
+                <div class="radio-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="consola-juego" id="100">
+                        <label class="custom-control-label" for="100">XBOX ONE</label>
+                    </div>  
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="consola-juego" id="200">
+                        <label class="custom-control-label" for="200">PLAY STATION</label>
+                    </div>                        
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="consola-juego" id="400">
+                        <label class="custom-control-label" for="400">NINTENDO</label>
+                    </div>                       
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="consola-juego" id="500">
+                        <label class="custom-control-label" for="500">CELULAR</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="consola-juego" id="300">
+                        <label class="custom-control-label" for="300">COMPUTADORA</label>
+                    </div>
+                </div>
+            </div>
+          </div>        
+   
+
+    
+
+        <script src="js/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        
+        <!--SCRIPT-->
+        <script>
+            window.sr = ScrollReveal()
+            sr.reveal('.navbar', {
+                duration: 2000,
+                origin: 'bottom'
+            });
+        
+            //smoth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('#searcher').click(function(){
+          $('.menu-item').addClass('hide-item')
+          $('.searcher-form').addClass('active')
+          $('.close').addClass('active')
+          $('#searcher').hide()
+      })
+      $('.close').click(function(){
+          $('.menu-item').removeClass('hide-item')
+          $('.searcher-form').removeClass('active')
+          $('.close').removeClass('active')
+          $('#searcher').show()
+      })
+  })
+  window.addEventListener('scroll',function(){
+      var nav=document.querySelector("nav");
+      nav.classList.toggle("sticky",window.scrollY>0);
+  })
+</script>
+    </body>
+</html>

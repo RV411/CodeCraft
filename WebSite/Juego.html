@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Juego</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Black+Ops+One|Orbitron|Roboto&display=swap" rel="stylesheet">     
+    <script src="https://kit.fontawesome.com/2c3Ge9b7b1.js"></script>
+    <!-- BOOTSTRAP-->    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    rel="stylesheet" >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet">    
+
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="fixed-top">
+        <div class="menu">
+            <ul>
+                <li><a href="Inicio.html"><i class="fa fa-gamepad"></i></a></li>
+                <li><a href="Inicio.html" class="menu-item">Inicio</a></li>                
+                <li><a href="Registrarse.html" class="menu-item">Registrarse</a></li>
+                <li><a href="InicioSesion.html" class="menu-item">Inicio Sesion</a></li>
+                <li><a href="#" id="searcher"><i class="fa fa-search"></i></a></li>
+            </ul>
+            <div class="searcher-form">
+                <form >
+                    <input type="text" name="" 
+                    placeholder="Buscar Juego">
+                </form>
+            </div>
+            <a class="close"><i class="fa fa-times"></i></a>
+        </div>
+    </nav>
+    <hr>
+    <!--JUMBOTRON-->
+    <div class="container">
+        <img src="img/halo.jpg" class="logo">        
+    </div>
+    <div class="container game-details">
+        <div class="row">
+            <div class="col-md-6 left-box">
+                <h1>Halo 4</h1>
+                <p>Es un videojuego de disparos en primera persona desarrollado por la filial 343 Industries y distribuido por Microsoft Studios para la videoconsola Xbox 360. Halo 4 es el primero de "la trilogía del reclamador", y el séptimo lanzamiento de la franquicia Halo</p>
+                <p>Genero: </p>
+                <div class="enlaces">
+                    <div class="genering">
+                        <a href="AccionAventura.html.html">Acción-Aventura</a>
+                        <a href="Disparos.html">disparos </a>
+                    </div>
+                    <p>Consolas: </p>
+                    <div class="consoling">
+                        <a href="XBOX.html">Xbox</a>
+                        <a href="COMPUTADORA.html">Computadoras</a>           
+                    </div>
+                </div>                
+                <p>Calificación: </p>
+                <div class="rating">
+                    <input type="radio" name="star" id ="star1" checked="checked">
+                    <label for="star1"><img src="img/1.png"><h4>Awww</h4></label>
+
+                    <input type="radio" name="star" id ="star2">
+                    <label for="star2"><img src="img/2.png"><h4>¡Oye si!</h4></label>
+
+                    <input type="radio" name="star" id ="star3">
+                    <label for="star3"><img src="img/3.png"><h4>Okey</h4></label>
+
+                    <input type="radio" name="star" id ="star4">
+                    <label for="star4"><img src="img/4.png"><h4>Masomenos</h4></label>
+
+                    <input type="radio" name="star" id ="star5">
+                    <label for="star5"><img src="img/5.png"><h4>Buaaj</h4></label>                    
+                </div>
+                <div class="left-box-comment ">
+                    <a href="#"><i class="fa fa-hand-o-up" aria-hidden="true"></i>Calificar</a>
+                <a href="#" class="coment-btn"><i class="fa fa-comment"></i>Comentar</a>
+                </div>                    
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/halo.jpg" class="game-img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="calificar col-md-4">
+                <div class="text-center col-md-10">
+                    <p>¿Te gusta el arte literaria del juego?
+                        <i class="fa fa-info-circle">
+                            <span class="info-tip">
+                                Historia, narrativa, diálogos y desarrollo de personajes.
+                            </span>
+                        </i>
+                    </p>
+                    <div class="box-calificar">
+                        <input type="radio" name="literaria" id="5a"><label for="5a">5</label>
+                        <input type="radio" name="literaria" id="4a"><label for="4a">4</label>
+                        <input type="radio" name="literaria" id="3a"><label for="3a">3</label>
+                        <input type="radio" name="literaria" id="2a"><label for="2a">2</label>
+                        <input type="radio" name="literaria" id="1a"><label for="1a">1</label>
+                    </div>
+                </div>
+            </div>
+            <div class="calificar col-md-4">
+                <div class="text-center col-md-10">
+                    <p>¿Te gusta el Arte Sonora en el juego?
+                        <i class="fa fa-info-circle">
+                            <span class="info-tip">
+                                Música y sonidos de ambiente en general.
+                            </span>
+                        </i>
+                    </p>
+                    <div class="box-calificar ">
+                        <input type="radio" name="sonora" id="5b"><label for="5b">5</label>
+                        <input type="radio" name="sonora" id="4b"><label for="4b">4</label>
+                        <input type="radio" name="sonora" id="3b"><label for="3b">3</label>
+                        <input type="radio" name="sonora" id="2b"><label for="2b">2</label>
+                        <input type="radio" name="sonora" id="1b"><label for="1b">1</label>
+                    </div>
+                </div>
+            </div>
+            <div class="calificar col-md-4">
+                <div class="text-center col-md-10">
+                    <p>¿Es considerable la duración del juego?
+                        <i class="fa fa-info-circle">
+                            <span class="info-tip">
+                                Duración en la Aventura principal, extras y modos de juego alternativos y 
+                                rejugabilidad del juego.
+                            </span>
+                        </i>
+                    </p>
+                    <div class="box-calificar">
+                        <input type="radio" name="duracion" id="5c"><label for="5c">5</label>
+                        <input type="radio" name="duracion" id="4c"><label for="4c">4</label>
+                        <input type="radio" name="duracion" id="3c"><label for="3c">3</label>
+                        <input type="radio" name="duracion" id="2c"><label for="2c">2</label>
+                        <input type="radio" name="duracion" id="1c"><label for="1c">1</label>
+                    </div>
+                </div>
+            </div>  
+
+        </div>
+        <div class="row">            
+            <div class="calificar col-md-4">
+                <div class="col-md-10 text-center">
+                    <p>¿Te gusta Mucho el contenido gráfico del juego?
+                        <i class="fa fa-info-circle">
+                            <span class="info-tip">
+                                Animacion,                                
+                                consistencia en los recursos gráficos y 
+                                escenas del juego
+                            </span>
+                        </i>
+                    </p>                    
+                    <div class="box-calificar">
+                        <input type="radio" name="grafico" id="5e"><label for="5e">5</label>
+                        <input type="radio" name="grafico" id="4e"><label for="4e">4</label>
+                        <input type="radio" name="grafico" id="3e"><label for="3e">3</label>
+                        <input type="radio" name="grafico" id="2e"><label for="2e">2</label>
+                        <input type="radio" name="grafico" id="1e"><label for="1e">1</label>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="calificar col-md-4">
+                <div class="col-md-10 text-center">
+                    <p>¿Los requisitos técnicos son exagerados para el juego?
+                        <i class="fa fa-info-circle">
+                            <span class="info-tip">
+                                Conexión a internet, mouse, teclado y micrófono.
+                            </span>
+                        </i>
+                    </p>
+                    <div class="box-calificar">
+                        <input type="radio" name="tecnico" id="5f"><label for="5f">5</label>
+                        <input type="radio" name="tecnico" id="4f"><label for="4f">4</label>
+                        <input type="radio" name="tecnico" id="3f"><label for="3f">3</label>
+                        <input type="radio" name="tecnico" id="2f"><label for="2f">2</label>
+                        <input type="radio" name="tecnico" id="1f"><label for="1f">1</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div class="container games">
+        <h3>Juegos Relacionados</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-6"><img src="img/dota2.jpg" alt=""></div>
+                    <div class="col-6"><img src="img/minecraft.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-6"><img src="img/lol.jpg" alt=""></div>
+                    <div class="col-6"><img src="img/Crash_Bash.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-6"><img src="img/gta-san-andreas.jpg" alt=""></div>
+                    <div class="col-6"><img src="img/SuperMarioBrosUDeluxe.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer id="contact">
+        <div class="container-footer-all">
+                <div class="container">                                  
+                </div>
+                <div class="container-footer">
+                        <div class="copyright">
+                            ° 2019 Todos los derechos reservados|
+                            <a href="">BubbaCorp</a>
+                        </div>
+                        <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Vector de Fondo creado por katemangostar - www.freepik.es</a>
+                </div>
+                
+        </div> 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+              crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#searcher').click(function(){
+                $('.menu-item').addClass('hide-item')
+                $('.searcher-form').addClass('active')
+                $('.close').addClass('active')
+                $('#searcher').hide()
+            })
+            $('.close').click(function(){
+                $('.menu-item').removeClass('hide-item')
+                $('.searcher-form').removeClass('active')
+                $('.close').removeClass('active')
+                $('#searcher').show()
+            })
+        })
+        window.addEventListener('scroll',function(){
+            var nav=document.querySelector("nav");
+            nav.classList.toggle("sticky",window.scrollY>0);
+        })
+    </script>
+</body>
+</html>
