@@ -9,7 +9,7 @@
 body{
     
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/control.jpg);    
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/Fondo0.jpg);
     background-size: cover;
     background-position: center;
     justify-content: center;
