@@ -463,9 +463,10 @@ i:hover .info-tip{
 }
 
 .titulo {
-    font-size: 30px;
+    background:  rgba(0, 0,0, 1);  /* fallback for old browsers */
+    font-size: 40px;
     font-family: 'Orbitron',  sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #fff;
 }
 
@@ -499,6 +500,8 @@ i:hover .info-tip{
 
 .carousel{
     min-height: 500px;
+    background:  rgba(0, 0,0, .6);/* fallback for old browsers */
+     /*background:  rgba(255, 255,255, .2);  /* fallback for old browsers */
 }
 
 .carousel .carousel-item{
@@ -685,13 +688,13 @@ figure .trasera p{
 .container-generos{
     width: 90%;
 	max-width: 800px;
-	margin: auto;
-    
+	margin: auto;    
 	font-family: 'Open Sans', sans-serif;
 }
 
 header {
-	padding: 40px 0;
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0.918);  /* fallback for old browsers */
 }
 
 header  .tiposgeneros{
@@ -713,10 +716,12 @@ header .tiposgeneros a.activo{
 }
 
  .grid {
+    background:  rgba(255, 255,255, .5);  /* fallback for old browsers */
 	position: relative;
 	width: 100%;
 	opacity: 1;
-	transition: opacity 0.5s linear 1s;
+    transition: opacity 0.5s linear 1s;
+    
 }
 
  .grid .imagenes-cargadas {
