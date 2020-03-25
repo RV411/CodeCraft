@@ -135,9 +135,8 @@ nav.sticky ul li a{
     font-size: 16px;
 }
 
-.searcher-form input::placeholder{
-    
-}
+/*.searcher-form input::placeholder{}*/
+
 .searcher-form:before{
     content: '\f002';
     position: absolute;
@@ -280,9 +279,17 @@ nav.sticky ul li a{
 }
 
 .left-box{
+    background: rgba(0, 0, 0, 0.8);  /* fallback for old browsers */
     color:#fff;
-    margin: 15px 0;
-    padding:20px;
+    margin: 15px 30px;
+    padding:10px;
+}
+
+.Image-Game{
+    background: rgba(0, 0, 0, 0.6);  /* fallback for old browsers */
+    color:#fff;
+    margin: 15px 10px;
+   
 }
 
 .rating {
@@ -340,9 +347,20 @@ nav.sticky ul li a{
     margin-right: 5px;
 }
 
+.card{
+
+    font-family:"Orbitron",sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #000; 
+}
+
 .calificar{
-    margin-bottom: 20px;
-    width: 500px;
+    margin: 10px 0px;
+    padding:10px;
+    width: 5px;
+    background: rgba(0, 0, 0, 0.6); 
 }
 
 .calificar p{
@@ -613,10 +631,7 @@ figure .trasera p{
     background: #36221c;
 }
 
-.header-resgistro{
-    
-    
-}
+/*.header-resgistro{}*/
 
 .header-resgistro h1{
     text-align: center;
