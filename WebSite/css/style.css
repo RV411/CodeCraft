@@ -9,7 +9,7 @@
 body{
     
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/control.jpg);    
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/Fondo0.jpg);
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -135,9 +135,8 @@ nav.sticky ul li a{
     font-size: 16px;
 }
 
-.searcher-form input::placeholder{
-    
-}
+/*.searcher-form input::placeholder{}*/
+
 .searcher-form:before{
     content: '\f002';
     position: absolute;
@@ -230,63 +229,44 @@ nav.sticky ul li a{
     float: left;
     font-size: 30px;
     color: white;
-    border-bottom: 6px solid #4caf50;
-    margin-bottom: 10px;
-    padding: 13px 0;
+    border-bottom: 2px solid #4caf50;
+    margin-bottom: 5px;
+    padding: 4px 0;
 }
 
 .register-box .col-md-4,
 .register-box .col-md-3{
-    margin-top: 120px;
+    background: rgba(0, 0, 0, 0.918);  /* fallback for old browsers */
+    margin: 120px 0px;    
 }
 
-.one-radio{
-    font-size: 14px;
-    font-weight:500;
-    text-transform: capitalize;
-    display: inline-block;
-    vertical-align: middle;
-    color: #fff;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
+.register-box .custom-checkbox{
+    margin: 4px 0px;
+    padding: 6px;
 }
 
-.one-radio + .one-radio{
-    margin-left: 20px;
+.register-box .custom-checkbox label{
+    
+    font-family: 'Black+Ops+One', sans-serif;
+    font-size: 20px;
+    color: #fff; 
 }
 
-.one-radio input[type="radio"]{
-    display:none;
+.register-box .login-text-box input{
+    font-family: 'Black+Ops+One', sans-serif;
+    font-size: 30px;
+    color: #fff; 
 }
 
-.one-radio span{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 3px solid #00aeef;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 7px;
+.login-box{
+    background: rgba(0, 0, 0, 0.918);  /* fallback for old browsers */
+    margin: 10px 0px; 
 }
 
-.one-radio span:after{
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #00aeef;
-    display: block;
-    position: absolute;
-    left:50% ;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(0);
-    border-radius: 50%;
-    transition: 300ms ease-in-out 0s;
-}
-
-.one-radio input[type="radio"]:checked ~ span:after{
-    transform: translate(-50%,-50%) scale(1);
+.login-box .login-text-box input{
+    font-family: 'Black+Ops+One', sans-serif;
+    font-size: 30px;
+    color: #fff; 
 }
 
 .logo{
@@ -299,9 +279,17 @@ nav.sticky ul li a{
 }
 
 .left-box{
+    background: rgba(0, 0, 0, 0.8);  /* fallback for old browsers */
     color:#fff;
-    margin: 15px 0;
-    padding:20px;
+    margin: 15px 30px;
+    padding:10px;
+}
+
+.Image-Game{
+    background: rgba(0, 0, 0, 0.6);  /* fallback for old browsers */
+    color:#fff;
+    margin: 15px 10px;
+   
 }
 
 .rating {
@@ -359,9 +347,20 @@ nav.sticky ul li a{
     margin-right: 5px;
 }
 
+.card{
+
+    font-family:"Orbitron",sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #000; 
+}
+
 .calificar{
-    margin-bottom: 20px;
-    width: 500px;
+    margin: 10px 0px;
+    padding:10px;
+    width: 5px;
+    background: rgba(0, 0, 0, 0.6); 
 }
 
 .calificar p{
@@ -482,9 +481,10 @@ i:hover .info-tip{
 }
 
 .titulo {
-    font-size: 30px;
+    background:  rgba(0, 0,0, 1);  /* fallback for old browsers */
+    font-size: 40px;
     font-family: 'Orbitron',  sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #fff;
 }
 
@@ -518,6 +518,8 @@ i:hover .info-tip{
 
 .carousel{
     min-height: 500px;
+    background:  rgba(0, 0,0, .6);/* fallback for old browsers */
+     /*background:  rgba(255, 255,255, .2);  /* fallback for old browsers */
 }
 
 .carousel .carousel-item{
@@ -629,10 +631,7 @@ figure .trasera p{
     background: #36221c;
 }
 
-.header-resgistro{
-    
-    
-}
+/*.header-resgistro{}*/
 
 .header-resgistro h1{
     text-align: center;
@@ -704,13 +703,13 @@ figure .trasera p{
 .container-generos{
     width: 90%;
 	max-width: 800px;
-	margin: auto;
-    
+	margin: auto;    
 	font-family: 'Open Sans', sans-serif;
 }
 
 header {
-	padding: 40px 0;
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0.918);  /* fallback for old browsers */
 }
 
 header  .tiposgeneros{
@@ -732,10 +731,12 @@ header .tiposgeneros a.activo{
 }
 
  .grid {
+    background:  rgba(255, 255,255, .5);  /* fallback for old browsers */
 	position: relative;
 	width: 100%;
 	opacity: 1;
-	transition: opacity 0.5s linear 1s;
+    transition: opacity 0.5s linear 1s;
+    
 }
 
  .grid .imagenes-cargadas {
