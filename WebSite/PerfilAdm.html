@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Editar Perfil</title>
+    <title>Perfil</title>
     <!-- BOOTSTRAP-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     rel="stylesheet" >
@@ -42,34 +42,25 @@
             </div>
         </nav>
         <hr>              
-        <!--BODY--> 
-        <div class="row">
-            <div class="login-box">
-                <h1>Editar Perfil</h1>
-    
-                        <div class="login-text-box">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                            <input type="text" placeholder="Nuevo Nombre" name="Nombre" id="Nombre" value="">
-                        </div>
-                        <div class="login-text-box">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                            <input type="text" placeholder="Nuevo Apellido" name="Apellido" id="Apellido" value="">
-                        </div>
-                        <div class="login-text-box">                    
-                            <input type="text" placeholder="Nuevo Nick Name" name="NickName" id="NickName" value="">
-                        </div>
-                        <div class="login-text-box">                    
-                            <input type="number" placeholder="Edad" name="Edad" id="Edad" value="" min="5" max="99" >
-                        </div>             
-                        <div class="login-text-box">
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                            <input type="password" placeholder="Nueva Contraseña" name="Contraseña" id="Contraseña" value="" >
-                        </div>                                            
-                        <a href="PerfilAdm.html" class="btn btn-sucess btn-lg btn-block" name="" type="submit">Aceptar Cambios</a>
-                        <a href="PerfilAdm.html" class="btn btn-danger btn-lg btn-block" name="" type="submit">Atras</a>
+        <!--BODY-->    
+        <h1 class="center-align titulo">Perfil Administrador</h1>
+        <div class="row " >
+            <div class="col-md-3  center-align card border-primary mb-3" ">
+                <h2>Cristiano<h2>
+                <H2>Ronaldo</H2>
+                <H2>Bicho CR7</H2>
+                <H2>37</H2>   
             </div>            
-        </div>    
-                            
+            <div class="col-md-3 center-align card text-white bg-info mb-3" ">
+                <a href="EditPerfil.html" class="btn btn-sucess btn-lg btn-block" name="" type="submit">Editar Perfil</a>
+                <a href="GestionVideo.html" class="btn btn-warning btn-lg btn-block" name="" type="submit">Gestionar Videojuego</a>
+                <a href="GestionUsuario.html" class="btn btn-primary btn-lg btn-block" name="" type="submit">Gestionar Usuarios</a>
+                <a href="Inicio.html" class="btn btn-danger btn-lg btn-block" name="" type="submit">Salír</a>         
+            </div>
+        </div>
+
+
+
         <script src="js/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>

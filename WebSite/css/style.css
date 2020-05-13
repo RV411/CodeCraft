@@ -347,6 +347,7 @@ nav.sticky ul li a{
     margin-right: 5px;
 }
 
+/*.searcher-form input::placeholder{}*/
 .card{
 
     font-family:"Orbitron",sans-serif;
@@ -760,6 +761,39 @@ header .tiposgeneros a.activo{
     height: 150px;
 	cursor: pointer;
 	vertical-align: top;
+}
+
+/*-----     TABLES  --------*/  
+#container-table{
+    margin: 150px auto;
+    width: 600px;
+}
+
+table{
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td{
+    padding: 5px;
+}
+
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px #0f362d;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover td{
+    background-color: #369681;
+    border-right:solid 1px #0f362d;
+    color: white;
 }
 
 footer{

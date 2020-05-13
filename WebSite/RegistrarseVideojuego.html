@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Perfil</title>
+    <title>REGISTRAR VIDEOJUEGO</title>
     <!-- BOOTSTRAP-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     rel="stylesheet" >
@@ -44,12 +44,20 @@
         <hr>              
         <!--BODY-->    
         <div class="row register-box">
-            <h1>Perfil</h1>
-            <div class="col-md-4 text-white">
-                <h2>Cristiano <h2>
-                <H2>Ronaldo</H2>
-                <H2>Bicho CR7</H2>
-                <H2>37</H2>                           
+            <h1>REGISTRAR VIDEOJUEGO</h1>
+            <div class="col-md-3">                
+                <div class="login-text-box">
+                    <i class="fa fa-gamepad" aria-hidden="true"></i>
+                    <input type="text" placeholder="Titulo del videojuego" name="titulo" id="titulo" value=""required>
+                </div>                
+                <div class="login-text-box">                    
+                    <input type="number" placeholder="Año" name="Año" id="Año" value="" min="1990" max="2020" required>
+                </div>                                           
+                <div class="login-text-box">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <textarea class=" text-white" name="comentarios" rows="100" cols="40">Descripción del Videojuego</textarea>
+                </div>
+                <a href="JuegoAceptado.html" class="btn btn-primary btn-lg btn-block" name="" type="submit">Aceptar</a>
             </div>
             
             <div class="col-md-3">
@@ -118,21 +126,22 @@
                     </div>
                 </div>
             </div>
-          </div>
-          <div class="row ">
-              <div class="col-md-4">
-                <a href="EditPerfilUser.html" class="btn btn-sucess btn-lg btn-block" name="" type="submit">Modificar Perfil</a>                
-              </div>
-              <div class="col-md-4">
-                <a href="MisGustos1.html" class="btn btn-sucess btn-lg btn-block" name="" type="submit">Mis Gustos</a>                
-              </div>
-              <div class="col-md-4">
-                <a href="MisOpiniones.html" class="btn btn-sucess btn-lg btn-block" name="" type="submit">Mis Opiniones</a>                
-              </div>
-          </div>
-   
-
+          </div>                                
+          <a href="GestionVideo.html" class="btn btn-primary btn-lg btn-block" name="" type="submit">regresar</a>                      
     
+        <!--FOOTER-->
+    <footer id="contact">
+        <div class="container-footer-all">
+                <div class="container">                                  
+                </div>
+                <div class="container-footer">
+                        <div class="copyright">
+                            ° 2019 Todos los derechos reservados|
+                            <a href="">BubbaCorp</a>
+                        </div>
+                </div>
+        </div> 
+    </footer>
 
         <script src="js/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

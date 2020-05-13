@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Perfil</title>
+    <title>REGISTRO</title>
     <!-- BOOTSTRAP-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     rel="stylesheet" >
@@ -44,12 +44,35 @@
         <hr>              
         <!--BODY-->    
         <div class="row register-box">
-            <h1>Perfil</h1>
-            <div class="col-md-4 text-white">
-                <h2>Cristiano <h2>
-                <H2>Ronaldo</H2>
-                <H2>Bicho CR7</H2>
-                <H2>37</H2>                           
+            <h1>REGISTRO</h1>
+            <div class="col-md-4">
+                <div class="login-text-box">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <input type="text" placeholder="Usuario o Administrador" name="TipoJugador" id="TipoJugador" value=""required>
+                </div>
+                <div class="login-text-box">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" value=""required>
+                </div>
+                <div class="login-text-box">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="Apellido" name="Apellido" id="Apellido" value=""required>
+                </div>
+                <div class="login-text-box">                    
+                    <input type="text" placeholder="Nick Name" name="NickName" id="NickName" value=""required>
+                </div>
+                <div class="login-text-box">                    
+                    <input type="number" placeholder="Edad" name="Edad" id="Edad" value="" min="5" max="99" required>
+                </div>
+                <div class="login-text-box">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>              
+                    <input type="email" placeholder="Correo Electronico" name="Correo" id="Correo" value="" required>
+                </div>                
+                <div class="login-text-box">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="Contraseña" name="Contraseña" id="Contraseña" value="" required>
+                </div>
+                <a href="RegistrarseUsuario.html" class="btn btn-primary btn-lg btn-block" name="" type="submit">Aceptar</a>
             </div>
             
             <div class="col-md-3">
@@ -118,21 +141,20 @@
                     </div>
                 </div>
             </div>
-          </div>
-          <div class="row ">
-              <div class="col-md-4">
-                <a href="EditPerfilUser.html" class="btn btn-sucess btn-lg btn-block" name="" type="submit">Modificar Perfil</a>                
-              </div>
-              <div class="col-md-4">
-                <a href="MisGustos1.html" class="btn btn-sucess btn-lg btn-block" name="" type="submit">Mis Gustos</a>                
-              </div>
-              <div class="col-md-4">
-                <a href="MisOpiniones.html" class="btn btn-sucess btn-lg btn-block" name="" type="submit">Mis Opiniones</a>                
-              </div>
-          </div>
-   
-
+          </div>                                
+          <a href="GestionUsuario.html" class="btn btn-primary btn-lg btn-block" name="" type="submit">regresar</a>                      
     
+        <!--FOOTER-->
+    <footer id="contact">
+        <div class="container-footer-all">
+                <div class="container-footer">
+                        <div class="copyright">
+                            ° 2019 Todos los derechos reservados|
+                            <a href="">BubbaCorp</a>
+                        </div>
+                </div>
+        </div> 
+    </footer>
 
         <script src="js/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

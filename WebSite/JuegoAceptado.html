@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Juego</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Black+Ops+One|Orbitron|Roboto&display=swap" rel="stylesheet">     
+    <script src="https://kit.fontawesome.com/2c3Ge9b7b1.js"></script>
+    <!-- BOOTSTRAP-->    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    rel="stylesheet" >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet">    
+
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="fixed-top">
+        <div class="menu">
+            <ul>
+                <li><a href="Inicio.html"><i class="fa fa-gamepad"></i></a></li>
+                <li><a href="Inicio.html" class="menu-item">Inicio</a></li>                
+                <li><a href="Listas.html" class="menu-item">Listas</a></li>
+                <li><a href="Generos.html" class="menu-item">Generos</a></li>
+                <li><a href="#" id="searcher"><i class="fa fa-search"></i></a></li>
+            </ul>
+            <div class="searcher-form">
+                <form >
+                    <input type="text" name="" 
+                    placeholder="Buscar Juego">
+                </form>
+            </div>
+            <a class="close"><i class="fa fa-times"></i></a>
+        </div>
+    </nav>
+    <hr>
+
+    <!--JUMBOTRON-->
+    <div class="container game-details">
+        <div class="row">
+            <div class="col-md-6 left-box">
+                <h1>Halo 4</h1>
+                <p>Es un videojuego de disparos en primera persona desarrollado por la filial 343 Industries y distribuido por Microsoft Studios para la videoconsola Xbox 360. Halo 4 es el primero de "la trilogía del reclamador", y el séptimo lanzamiento de la franquicia Halo</p>
+                <p>Genero: </p>
+                <div class="enlaces">
+                    <div class="genering">
+                        <a href="Generos.html">Acción-Aventura</a>
+                        <a href="Generos.html">disparos </a>
+                    </div>
+                    <p>Consolas: </p>
+                    <div class="consoling">
+                        <a href="Generos.html">Xbox</a>
+                        <a href="Generos.html">Computadoras</a>           
+                    </div>
+                </div>                
+                <p>Calificación: </p>
+                <div class="rating">
+                    <input type="radio" name="star" id ="star1" checked="checked">
+                    <label for="star1"><img src="img/1.png"><h4>Awww</h4></label>
+
+                    <input type="radio" name="star" id ="star2">
+                    <label for="star2"><img src="img/2.png"><h4>¡Oye si!</h4></label>
+
+                    <input type="radio" name="star" id ="star3">
+                    <label for="star3"><img src="img/3.png"><h4>Okey</h4></label>
+
+                    <input type="radio" name="star" id ="star4">
+                    <label for="star4"><img src="img/4.png"><h4>Masomenos</h4></label>
+
+                    <input type="radio" name="star" id ="star5">
+                    <label for="star5"><img src="img/5.png"><h4>Buaaj</h4></label>                    
+                </div>                                
+            </div>
+            <div class="Image-Game col-md-5 ">
+                <div class="card">
+                    <div class="card-header">
+                      Comentario mas relevante
+                    </div>
+                    <div class="card">
+                        <blockquote class="blockquote ">
+                            <p>El juego me parece increible debido a que implementan a un guerrero espacial en donde salva los "HALO" que son una especie de mundos.</p>
+                            <footer class="blockquote-footer">Por el usuario: <cite title="Source Title">anonimo</cite></footer>
+                        </blockquote>
+                        
+                      
+                    </div>
+                  </div>
+                <div class="form-group">
+                    <label for="Write-comment">Escribe tu comentario</label>
+                    <textarea class="form-control" id="Write-comment" rows="3"></textarea>
+                  </div>
+                <div class="left-box-comment text-center">
+                     <!-- <a href="#" class="coment-btn"><i class="fa fa-comment"></i>Comentar</a>-->
+                     <!-- <a href="#"><i class="fa fa-hand-o-up" aria-hidden="true"></i>Calificar</a>-->
+                    <a href="#" ><i class="fa fa-comment"></i>Comentar</a>                    
+                </div>   
+            </div>
+        </div>              
+    </div>   
+
+    <!--FOOTER-->
+    <footer id="contact">
+        <div class="container-footer-all">
+                <div class="container">                                  
+                </div>
+                <div class="container-footer">
+                        <div class="copyright">
+                            ° 2019 Todos los derechos reservados|
+                            <a href="">BubbaCorp</a>
+                        </div>
+                        <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Vector de Fondo creado por katemangostar - www.freepik.es</a>
+                </div>
+                
+        </div> 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+              crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#searcher').click(function(){
+                $('.menu-item').addClass('hide-item')
+                $('.searcher-form').addClass('active')
+                $('.close').addClass('active')
+                $('#searcher').hide()
+            })
+            $('.close').click(function(){
+                $('.menu-item').removeClass('hide-item')
+                $('.searcher-form').removeClass('active')
+                $('.close').removeClass('active')
+                $('#searcher').show()
+            })
+        })
+        window.addEventListener('scroll',function(){
+            var nav=document.querySelector("nav");
+            nav.classList.toggle("sticky",window.scrollY>0);
+        })
+    </script>
+</body>
+</html>
